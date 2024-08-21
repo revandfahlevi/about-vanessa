@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan untuk Pasangan</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400&display=swap');
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #87CEEB; /* Warna latar belakang biru langit */
+            color: #444;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            z-index: 1;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: #FF6347; /* Warna judul lebih cerah (Tomato) */
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #4B0082; /* Warna teks lebih cerah (Indigo) */
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .heart {
+            font-size: 60px;
+            color: #FF1493; /* Warna hati (DeepPink) */
+            animation: pulse 1.5s infinite;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background-color: #FFD700; /* Warna sparkle emas */
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+            animation: sparkle 2s infinite;
+            top: 50%;
+            left: 50%;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes sparkle {
+            0%, 100% {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+            .heart {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Untukmu, Cintaku</h1>
+        <p>Kehadiranmu telah mengubah hidupku menjadi lebih indah. Terima kasih telah membawa cinta dan kebahagiaan.</p>
+        <div class="heart">❤️</div>
+        <p>Aku mencintaimu lebih dari yang dapat diungkapkan kata-kata.</p>
+    </div>
+
+    <!-- Sparkles -->
+    <div class="sparkle" style="top: 20%; left: 30%; animation-delay: 0s;"></div>
+    <div class="sparkle" style="top: 40%; left: 70%; animation-delay: 0.5s;"></div>
+    <div class="sparkle" style="top: 60%; left: 50%; animation-delay: 1s;"></div>
+    <div class="sparkle" style="top: 80%; left: 40%; animation-delay: 1.5s;"></div>
+</body>
+</html>
